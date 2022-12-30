@@ -1,8 +1,14 @@
 open Printf
 open Scanf
 
-let read_int _ = bscanf Scanning.stdin " %d " (fun x -> x)
-let read_string _ = bscanf Scanning.stdin " %s " (fun x -> x)
+let ( ** ) a b = Int64.mul a b
+let ( ++ ) a b = Int64.add a b
+let ( -- ) a b = Int64.sub a b
+let ( // ) a b = Int64.div a b
+let ( %% ) a b = Int64.rem a b
+
+let long x = Int64.of_int x
+let toint x = Int64.to_int x
 
 module IntMap = Map.Make(struct type t = int let compare = compare end)
 module PairMap = Map.Make(struct type t = (int*int) let compare = compare end)
