@@ -1,3 +1,3 @@
 # OCaml_CP_Template
 
-The compettiive programming templates for Ocaml 
+The competive programming templates for OCaml 
